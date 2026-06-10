@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Profile Card</title>
+    <style>
+      .active-status {
+        background-color: blue;
+        border: 2px solid black;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="profileCard">
+      <img src="" alt="ID-Photo" id="profileImage" />
+      <h2 id="profileName">John Doe</h2>
+      <p id="profileRole">Software Developer</p>
+      <p id="profileBio">
+        Passionate about coding and learning and new technologies
+      </p>
+      <button id="updateNameBtn">Update Name</button>
+      <button id="updateRoleBtn">Update Role</button>
+      <button id="toggleStatusBtn">Toggle Active Status</button>
+      <button id="changeImageBtn">Change Image</button>
+      <p id="statusText"></p>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
